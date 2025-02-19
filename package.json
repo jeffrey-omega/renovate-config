@@ -1,0 +1,24 @@
+{
+  "name": "@hellstack/renovate-config",
+  "description": "This repository contains my personal Renovate configuration. It is used to automatically update dependencies in my repositories.",
+  "homepage": "https://github.com/jeffrey-omega/renovate-config#readme",
+  "private": true,
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffrey-omega/renovate-config.git"
+  },
+  "scripts": {
+    "test": "renovate-config-validator ./default.json"
+  },
+  "files": [
+    "default.json"
+  ],
+  "devDependencies": {
+    "renovate": "^39.175.7"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
