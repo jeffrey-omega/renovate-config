@@ -1,22 +1,26 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "description": "Default custom configuration for Renovate",
-    "extends": ["config:best-practices", ":rebaseStalePrs", ":semanticCommits", ":enableVulnerabilityAlerts"],
-    "timezone": "Europe/Zurich",
-    "dependencyDashboardApproval": true,
-    "assignAutomerge": false,
-    "assignees": ["jeffrey-omega"],
-    "recreateWhen": "never",
-    "lockFileMaintenance": {
-      "enabled": true,
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Default custom configuration for Renovate",
+  "extends": [
+    "config:best-practices",
+    ":rebaseStalePrs",
+    ":semanticCommits",
+    ":enableVulnerabilityAlerts"
+  ],
+  "timezone": "Europe/Zurich",
+  "dependencyDashboardApproval": true,
+  "assignAutomerge": false,
+  "assignees": ["jeffrey-omega"],
+  "recreateWhen": "never",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "description": ["Automerge non-major updates"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true
-    },
-    "packageRules": [
-      {
-        "description": ["Automerge non-major updates"],
-        "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-        "automerge": true
-      }
-    ]
-  }
-  
+    }
+  ]
+}
