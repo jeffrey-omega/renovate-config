@@ -16,7 +16,7 @@
     "default.json"
   ],
   "devDependencies": {
-    "renovate": "^39.175.7"
+    "renovate": "39.175.7"
   },
   "engines": {
     "node": ">=22.12.0"
