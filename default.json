@@ -3,6 +3,7 @@
   "description": "Default custom configuration for Renovate",
   "extends": [
     "config:best-practices",
+    ":disableMajorUpdates",
     ":rebaseStalePrs",
     ":semanticCommits",
     ":enableVulnerabilityAlerts"
